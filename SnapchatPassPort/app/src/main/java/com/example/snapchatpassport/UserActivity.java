@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class UserActivity extends AppCompatActivity {
-    public static boolean vRyerson = false, vOpera = false;
+    public static boolean vRyerson = false, vOpera = false, vEiffel = false;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);

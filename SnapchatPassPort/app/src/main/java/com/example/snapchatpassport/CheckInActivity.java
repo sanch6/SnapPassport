@@ -174,6 +174,12 @@ public class CheckInActivity extends AppCompatActivity
             if(lati>43&&lati<44&&longi>79&&longi<80){
                 currentLoc.setText("Ryerson" );
                 UserActivity.vRyerson=true;
+            }else if(lati>33&&lati<34&&longi>150&&longi<151){
+                currentLoc.setText("Sydney Opera House" );
+                UserActivity.vOpera=true;
+            }else if(lati>48&&lati<49&&longi>2&&longi<3){
+                currentLoc.setText("Eiffel Tower" );
+                UserActivity.vEiffel=true;
             }else{
                 currentLoc.setText("Current Location" );
             }
@@ -218,6 +224,9 @@ public class CheckInActivity extends AppCompatActivity
             }else if(lati>33&&lati<34&&longi>150&&longi<151){
                 currentLoc.setText("Sydney Opera House" );
                 UserActivity.vOpera=true;
+            }else if(lati>48&&lati<49&&longi>2&&longi<3){
+                currentLoc.setText("Eiffel Tower" );
+                UserActivity.vEiffel=true;
             }else{
                 currentLoc.setText("Current Location" );
             }
