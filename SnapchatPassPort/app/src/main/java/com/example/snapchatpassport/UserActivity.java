@@ -31,6 +31,7 @@ public class UserActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //vRyerson = false; vOpera = false; vEiffel = false;
                 startActivity(new Intent( UserActivity.this,MainActivity.class));
             }
         });
