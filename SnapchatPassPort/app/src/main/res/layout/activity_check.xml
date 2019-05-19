@@ -65,5 +65,17 @@
         android:textSize="20sp"
         android:typeface="monospace"/>
 
+    <Button
+        android:id="@+id/bP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+
+        android:text="Take A Picture"
+        android:textColor="#0A0A0A"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        tools:visibility="invisible" />
+
 </LinearLayout>
 </RelativeLayout>

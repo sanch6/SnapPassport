@@ -82,11 +82,22 @@ public class CheckInActivity extends AppCompatActivity
                 addOnConnectionFailedListener(this).build();
 
         Button btn = (Button)findViewById(R.id.bD);
+        Button btn2 = (Button)findViewById(R.id.bP);
+        if(currentLoc.getText()=="Current Location"){
 
+        }else{
+            btn2.setVisibility(View.VISIBLE);
+        }
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CheckInActivity.this, UserActivity.class));
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CheckInActivity.this, SnapActivity.class));
             }
         });
     }

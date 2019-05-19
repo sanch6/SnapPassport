@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SnapchatPassPort</string>
+    <string name="sendPhotoButton">Send Photo</string>
+    <string name="app_permission_text">gib permissions pls</string>
 </resources>
