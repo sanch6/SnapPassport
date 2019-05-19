@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.view.Window;
+import android.view.WindowManager;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Button btn = (Button)findViewById(R.id.bLI);
+        getSupportActionBar().hide(); // hide the title bar
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,40 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".UserActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="737dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
 
-        <Button
-            android:id="@+id/bV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="View" />
+        />
 
-        <Button
-            android:id="@+id/bC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Check In" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/bC"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="285dp"
+        android:background="@drawable/buttons"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:text="Check In"
+        android:textColor="#0A0A0A"
+        android:textSize="20sp"
+        android:typeface="monospace"
 
-        <Button
-            android:id="@+id/bLO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Log Out" />
-    </LinearLayout>
+        />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/bV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="285dp"
+        android:background="@drawable/buttons"
+        android:text="Stamps"
+        android:textColor="#0A0A0A"
+        android:textSize="20sp"
+        android:typeface="monospace"
+
+        />
+
+    <Button
+        android:id="@+id/bLO"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_button"
+        android:text="Log Out"
+        android:textColor="#0A0A0A"
+        android:textSize="20sp"
+        android:typeface="monospace"
+
+        />
+
+</RelativeLayout>

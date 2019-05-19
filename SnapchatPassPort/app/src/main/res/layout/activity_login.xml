@@ -1,12 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="737dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+
+        />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="475dp"
+        android:hint="Email"
+        android:textColor="#00B8FF"
+        android:background="@drawable/custom_text"
+
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="525dp"
+        android:background="@drawable/custom_text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#0A0A0A"
+
+        />
 
     <Button
         android:id="@+id/bLI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log IN" />
-</LinearLayout>
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_button"
+
+        android:text="Sign In"
+        android:textColor="#0A0A0A"
+        android:textSize="20sp"
+        android:typeface="monospace"
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

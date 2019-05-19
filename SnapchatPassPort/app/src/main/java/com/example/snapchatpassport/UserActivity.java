@@ -5,13 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.view.Window;
+import android.view.WindowManager;
 public class UserActivity extends AppCompatActivity {
-    public static boolean vRyerson = false, vOpera = false, vEiffel = false;
+    public static boolean vRyerson = false, vOpera = false, vEiffel = false, vSquare = false, vFuji = false;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
         Button btn = (Button)findViewById(R.id.bV);
+        getSupportActionBar().hide(); // hide the title bar
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

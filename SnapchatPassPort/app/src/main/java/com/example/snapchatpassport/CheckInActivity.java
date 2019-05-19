@@ -18,6 +18,8 @@ import android.content.Intent;
 
 import android.widget.Toast;
 import android.widget.Button;
+import android.view.Window;
+import android.view.WindowManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -62,6 +64,7 @@ public class CheckInActivity extends AppCompatActivity
         // we add permissions we need to request location of the users
         permissions.add(Manifest.permission.ACCESS_FINE_LOCATION);
         permissions.add(Manifest.permission.ACCESS_COARSE_LOCATION);
+        getSupportActionBar().hide(); // hide the title bar
 
         permissionsToRequest = permissionsToRequest(permissions);
 
@@ -171,7 +174,7 @@ public class CheckInActivity extends AppCompatActivity
             locationTv.setText("Latitude : " + location.getLatitude() + "\nLongitude : " + location.getLongitude());
             lati=location.getLatitude();
             longi=location.getLongitude();
-            if(lati>43&&lati<44&&longi>79&&longi<80){
+            if(lati>43&&lati<44&&longi>-80&&longi<-79){
                 currentLoc.setText("Ryerson" );
                 UserActivity.vRyerson=true;
             }else if(lati>33&&lati<34&&longi>150&&longi<151){
@@ -180,6 +183,12 @@ public class CheckInActivity extends AppCompatActivity
             }else if(lati>48&&lati<49&&longi>2&&longi<3){
                 currentLoc.setText("Eiffel Tower" );
                 UserActivity.vEiffel=true;
+            }else if(lati>55&&lati<56&&longi>37&&longi<38){
+                currentLoc.setText("Red Square" );
+                UserActivity.vSquare=true;
+            }else if(lati>35&&lati<36&&longi>138&&longi<139){
+                currentLoc.setText("Mount Fuji" );
+                UserActivity.vFuji=true;
             }else{
                 currentLoc.setText("Current Location" );
             }
@@ -227,6 +236,12 @@ public class CheckInActivity extends AppCompatActivity
             }else if(lati>48&&lati<49&&longi>2&&longi<3){
                 currentLoc.setText("Eiffel Tower" );
                 UserActivity.vEiffel=true;
+            }else if(lati>55&&lati<56&&longi>37&&longi<38){
+                currentLoc.setText("Red Square" );
+                UserActivity.vSquare=true;
+            }else if(lati>35&&lati<36&&longi>138&&longi<139){
+                currentLoc.setText("Mount Fuji" );
+                UserActivity.vFuji=true;
             }else{
                 currentLoc.setText("Current Location" );
             }
