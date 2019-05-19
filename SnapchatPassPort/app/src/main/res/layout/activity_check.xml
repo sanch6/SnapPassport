@@ -75,7 +75,7 @@
         android:textColor="#0A0A0A"
         android:textSize="20sp"
         android:typeface="monospace"
-        tools:visibility="invisible" />
+         />
 
 </LinearLayout>
 </RelativeLayout>

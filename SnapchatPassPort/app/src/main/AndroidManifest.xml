@@ -18,11 +18,11 @@
             android:value="@string/google_maps_key" />
         <meta-data
             android:name="com.snapchat.kit.sdk.clientId"
-            android:value="b2817982-9b28-4a30-9535-e4a95ea9c621" />
+            android:value="0ad76f6e-dab8-41e8-a294-69afedbd2690" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.snappassport.fileprovider"
+            android:authorities="com.example.snapchatpassport.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
